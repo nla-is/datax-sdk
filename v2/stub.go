@@ -27,7 +27,7 @@ func datax_sdk_v2_next() C.datax_sdk_v2_message {
 
 // datax_sdk_v2_emit Publishes a message
 //
-// The message data should be encoded in msgpack format
+// The message data should be encoded in CBOR format (http://cbor.io/)
 //
 //export datax_sdk_v2_emit
 func datax_sdk_v2_emit(data C.const_unsigned_char_p, data_size C.int32_t, reference C.const_char_p) {
@@ -56,6 +56,8 @@ func datax_sdk_v2_message_stream(message C.datax_sdk_v2_message) C.const_char_p 
 }
 
 // datax_sdk_v2_message_data Obtains the data of the message
+//
+// The data is encoded in CBOR format (http://cbor.io/)
 //
 //export datax_sdk_v2_message_data
 func datax_sdk_v2_message_data(message C.datax_sdk_v2_message) C.const_unsigned_char_p {
