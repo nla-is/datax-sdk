@@ -6,4 +6,4 @@
 
 #include <stdint.h>
 
-typedef uintptr_t datax_sdk_v3_message;
+typedef uintptr_t datax_sdk_v2_message;

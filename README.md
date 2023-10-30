@@ -1,2 +1,2 @@
-# datax-sdk-protocol
-Protocol for implementing DataX SDKs
+# DataX SDK
+Generic interface implementing DataX SDKs
